@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="./assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -49,6 +49,34 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task12_app.js"></script>
+	<script>
+		const inputNum1 = document.getElementById("inputNum1");
+		const inputNum2 = document.getElementById("inputNum2");
+		const inputNum3 = document.getElementById("inputNum3");
+
+		const btn1 = document.getElementById("btn1");
+		const btn2 = document.getElementById("btn2");
+		const btn3 = document.getElementById("btn3");
+
+		const onMintoSec = () => {
+			const min = inputNum1.value;
+			const sec = min * 60;
+			alert(`${min} minutes is equal to ${sec} seconds`);
+		};
+		const onhoutomin = () => {
+			const hou = inputNum2.value;
+			const min = hou * 60;
+			alert(`${hou} hours is equal to ${min} minutes`);
+		};
+		const onSectoMin = () => {
+			const sec = inputNum3.value;
+			const min = sec / 60;
+			alert(`${sec} seconds is equal to ${min} minuts`);
+		};
+
+		btn1.addEventListener("click", onMintoSec);
+		btn2.addEventListener("click", onhoutomin);
+		btn3.addEventListener("click", onSectoMin);
+	</script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="./assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,6 +34,16 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task8_app.js"></script>
+	<script>
+		const btn = document.getElementById("btn");
+		const inputCap = document.getElementById("inputCap");
+		const toUppercase = () => {
+			const text = inputCap.value;
+			const capitalizeString = text.toUpperCase();
+			alert(capitalizeString);
+		};
+
+		btn.addEventListener("click", toUppercase);
+	</script>
 </body>
 </html>

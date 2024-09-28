@@ -24,6 +24,12 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/task9_app.js"></script>
+	<script>
+		const date1 = new Date("1990-03-05");
+		const date2 = new Date("2024-09-07");
+		const timeDiff = Math.abs(date2.getTime() - date1.getTime());
+		const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+		alert(`Number of days between two dates: ${daysDiff}`);
+	</script>
 </body>
 </html>

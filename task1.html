@@ -5,9 +5,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="./assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-	
 </head>
 <body>
 	<div class="container">
@@ -36,6 +35,18 @@
 			</div>
 		</div>
 	</div>
-	<script src=" js/task1.app.js"></script>
+	<script>
+		const btn = document.getElementById("btn");
+		const inputNum = document.getElementById("inputNum");
+		const onClickAddnum = () => {
+			const num = inputNum.value;
+			if (num % 2 == 0) {
+				alert("Given number is Even");
+			} else {
+				alert("Given number is Odd");
+			}
+		};
+		btn.addEventListener("click", onClickAddnum);
+	</script>
 </body>
 </html>
